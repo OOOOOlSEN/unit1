@@ -16,6 +16,25 @@ void setup() {
   ellipse(480, 70, 60, 35);
   ellipse(510, 70, 50, 30);
   
+  // Draw a rainbow using arcs (from outer to inner)
+  noStroke();
+  fill(255, 0, 0);            // red
+  ellipse(320, 280, 300, 300);
+  fill(255, 127, 0);          // orange
+  ellipse(320, 280, 280, 280);
+  fill(255, 255, 0);          // yellow
+  ellipse(320, 280, 260, 260);
+  fill(0, 255, 0);            // green
+  ellipse(320, 280, 240, 240);
+  fill(0, 0, 255);            // blue
+  ellipse(320, 280, 220, 220);
+  fill(75, 0, 130);           // indigo
+  ellipse(320, 280, 200, 200);
+  fill(148, 0, 211);          // violet
+  ellipse(320, 280, 180, 180);
+  fill(135, 206, 235);        // inner light blue
+  ellipse(320, 280, 160, 160);
+  
   // Draw the green ground
   fill(0, 128, 0);  // green
   rect(0, 300, width, 100);
@@ -24,24 +43,7 @@ void setup() {
   fill(#FAFF03);  // yellowish
   ellipse(500, 150, 100, 100);
   
-  // Draw a rainbow using arcs (from outer to inner)
-  noStroke();
-  fill(255, 0, 0);            // red
-  arc(320, 280, 300, 300, PI, TWO_PI);
-  fill(255, 127, 0);          // orange
-  arc(320, 280, 280, 280, PI, TWO_PI);
-  fill(255, 255, 0);          // yellow
-  arc(320, 280, 260, 260, PI, TWO_PI);
-  fill(0, 255, 0);            // green
-  arc(320, 280, 240, 240, PI, TWO_PI);
-  fill(0, 0, 255);            // blue
-  arc(320, 280, 220, 220, PI, TWO_PI);
-  fill(75, 0, 130);           // indigo
-  arc(320, 280, 200, 200, PI, TWO_PI);
-  fill(148, 0, 211);          // violet
-  arc(320, 280, 180, 180, PI, TWO_PI);
-  fill(135, 206, 235);        // inner light blue
-  arc(320, 280, 160, 160, PI, TWO_PI);
+  
   
   // Draw mountains using simple triangles
   fill(#4612B7);  // purple
@@ -57,6 +59,21 @@ void setup() {
   ellipse(245, 330, 35, 35);
   
   // Robot body (a black rectangle)
+  stroke(0);
+  strokeWeight(12);
+  line(210, 230, 180, 200);
+  line(280, 230, 310, 200);
+  strokeWeight(8);
+  line(160, 150, 180, 200);
+  line(350, 230, 310, 200);
+  strokeWeight(4);
+  line(160, 150, 155, 155);
+  line(160, 150, 153, 147);
+  line(160, 150, 163, 144);
+  
+  line(350, 230, 360, 223);
+  line(350, 230, 360, 233);
+  line(350, 230, 355, 240);
   fill(0);
   rect(210, 230, 70, 100);
   
